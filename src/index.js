@@ -11,23 +11,17 @@
    createDivWithText('loftschool') // создаст элемент div, поместит в него 'loftschool' и вернет созданный элемент
  */
 function createDivWithText(text) {
-//   let el = document.createElement('div')
-//   el.textContent = text
-//   return el
 }
 
 /*
  Задание 2:
 
- Функция должна вставлять элемент, переданный в параметре what в начало элемента, 
- переданного в параметре where
+ Функция должна вставлять элемент, переданный в параметре what в начало элемента, переданного в параметре where
 
  Пример:
-   prepend(document.querySelector('#one'), document.querySelector('#two')) 
-   // добавит элемент переданный первым аргументом в начало элемента переданного вторым аргументом
+   prepend(document.querySelector('#one'), document.querySelector('#two')) // добавит элемент переданный первым аргументом в начало элемента переданного вторым аргументом
  */
 function prepend(what, where) {
-
 }
 
 /*
