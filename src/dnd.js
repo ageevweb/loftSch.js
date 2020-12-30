@@ -18,7 +18,8 @@
 const homeworkContainer = document.querySelector('#homework-container');
 
 /*
- Функция должна создавать и возвращать новый div с классом draggable-div и случайными размерами/цветом/позицией
+ Функция должна создавать и возвращать новый div с классом draggable-div 
+ и случайными размерами/цветом/позицией
  Функция должна только создавать элемент и задвать ему случайные размер/позицию/цвет
  Функция НЕ должна добавлять элемент на страницу. На страницу элемент добавляется отдельно
 
@@ -27,6 +28,15 @@ const homeworkContainer = document.querySelector('#homework-container');
    homeworkContainer.appendChild(newDiv);
  */
 function createDiv() {
+  let el = document.createElement('div')
+  el.classList.add('draggable-div')
+  el.style.width = 200+'px'
+  el.style.height = 200+'px'
+  el.style.background = 'blue'
+  el.style.top = 50+'px'
+  el.style.left = 50+'px'
+
+  return el
 }
 
 /*
@@ -38,6 +48,7 @@ function createDiv() {
    addListeners(newDiv);
  */
 function addListeners(target) {
+  target.setAttribute('draggable', true);
 }
 
 let addDivButton = homeworkContainer.querySelector('#addDiv');
